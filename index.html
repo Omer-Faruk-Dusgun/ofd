@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFD | Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome İkon Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+   <!-- 1. Karşılama Ekranı -->
+    <section id="welcome-screen">
+        <!-- Arka Plan Resmi -->
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80" alt="background" class="full-bg-img">
+        <div class="dark-tint"></div>
+
+        <div class="welcome-overlay">
+            <div class="ofd-badge large-badge">
+                <span class="bracket">&lt;</span>OFD<span class="bracket">/&gt;</span>
+            </div>
+            <h1>Hoş Geldiniz</h1>
+            <p><strong>Geliştirici Dünyama Adım Atın</strong></p>
+            <p>Şuan için site demo olarak tasarlanmıştır geliştirilecektir!.</p>
+            <button id="enter-btn">
+                <span>Başlayalım</span>
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- 2. Ana İçerik -->
+    <main id="main-content" class="hidden">
+        
+        <!-- Üst Menü / Navbar -->
+        <header class="navbar">
+            <div class="ofd-badge nav-badge">
+                <span class="bracket">&lt;</span>OFD<span class="bracket">/&gt;</span>
+            </div>
+            <nav>
+                <a href="#about">Hakkımda</a>
+                <a href="#skills">Beceriler</a>
+                <a href="#projects">Projeler</a>
+                <a href="#contact">İletişim</a>
+            </nav>
+        </header>
+
+        <!-- Hakkımda Bölümü -->
+        <section id="about" class="section">
+            <h2><i class="fa-solid fa-terminal"></i> Hakkımda</h2>
+            <div class="about-card">
+                <div class="about-header">
+                    <div class="about-avatar">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="about-title-group">
+                        <h3><strong>Ömer Faruk Düşgün</strong></h3>
+                        <span class="role-badge">Yazılım Mühendisliği & Geliştirme</span>
+                    </div>
+                </div>
+
+                <div class="about-body">
+                    <p>
+                        Mobil, backend ve web sistemleri üzerinde performans odaklı mimariler geliştiren bir bilgisayar mühendisliği öğrencisiyim. 
+                        Kullanıcı dostu arayüzler inşa etmekten, karmaşık veritabanı şemaları ve ölçeklenebilir iş akış otomasyonları kurmaktan keyif alıyorum. Yazılım geliştirme sürecinde öğrenme aşamasındayım mobil uygulama , web tasarımı , otomasyon ve veri tabanı alanında ileri derece eğitimim bulunmakta.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <strong>Hızlı & Temiz Kod</strong>
+                                <span>SOLID prensipleri ve optimize algoritmalar</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <div>
+                                <strong>Güvenli & Ölçeklenebilir</strong>
+                                <span>İlişkisel veritabanları ve kararlı mimariler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-footer">
+                    <div class="status-indicator">
+                        <span class="pulse-dot"></span>
+                        <span> <strong>Yeni projelere ve iş birliklerine açığım</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- Beceriler Bölümü -->
+        <section id="skills" class="section">
+            <h2><i class="fa-solid fa-code"></i> Beceriler & Yetenekler</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+    <i class="fa-solid fa-mobile-screen-button"></i>
+    <h3>Flutter & Dart</h3>
+    <p>Mobil ve Web Uygulama Geliştirme</p>
+</div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h3>OOP & Mimari Tasarım</h3>
+                    <p>C#, Java ile Nesne Yönelimli Programlama ve SOLID Prensipleri</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Sistem & Otomasyon</h3>
+                    <p>İş Akışı Otomasyonları, Masaüstü Sistemleri ve Süreç Yönetimi</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Veritabanı</h3>
+                    <p>SQL Server, İlişkisel Şemalar ve Sorgu Optimizasyonu</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>Web Teknolojileri</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projeler Bölümü -->
+        <section id="projects" class="section">
+            <h2><i class="fa-solid fa-laptop-code"></i> Projeler</h2>
+            <div class="projects-grid" id="projects-container">
+                
+                <!-- Proje 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <a href="https://proje1-adiniz.netlify.app" target="_blank" rel="noopener noreferrer" class="external-link" title="Canlı Önizleme">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <h3>QR Menü & Rehber</h3>
+                    <p>Kiralık mülkler ve işletmeler için dijital rehber ve mobil  QR menü platformu.</p>
+                    <div class="tags">
+                        <span>Flutter Web</span>
+                        <span>Netlify</span>
+                    </div>
+                    <a href="https://1qrmenum.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                        <span>Siteye Git</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Proje 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <a href="https://1qrmenum.netlify.app/" target="_blank" rel="noopener noreferrer" class="external-link" title="Canlı Önizleme">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <h3>Araç Galerisi</h3>
+                    <p>Araç galerisi web otomasyonu.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://omerfarukdusgun.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                        <span>Siteye Git</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Proje 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <a href="https://proje3-adiniz.netlify.app" target="_blank" rel="noopener noreferrer" class="external-link" title="Canlı Önizleme">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <h3>Emlak Sitesi</h3>
+                    <p>Demo olarak hazırlanmış emlak sitesi</p>
+                    <div class="tags">
+                        <span>HTML5 Canvas</span>
+                        <span>Game</span>
+                    </div>
+                    <a href="https://prismatic-dodol-40af16.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                        <span>Siteye Git</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- İletişim / Footer Bölümü -->
+        <footer id="contact" class="section contact-section">
+            <h2><i class="fa-solid fa-envelope"></i> İletişim</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fa-solid fa-at"></i>
+                    <h4>E-Posta</h4>
+                    <a href="mailto:omerfarukdusgun@gmail.com">omerfarukdusgun@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h4>Instagram</h4>
+                    <a href="https://www.instagram.com/_ofd._/#" target="_blank" rel="noopener noreferrer">@_ofd._</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OFD. Tüm hakları saklıdır.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
